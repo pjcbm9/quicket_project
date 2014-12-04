@@ -1,0 +1,7 @@
+<animation-list
+    android:id="@+id/up_button_anim"
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/up_button_clicked" android:duration="200" />
+    <item android:drawable="@drawable/up_button" android:duration="50" />
+</animation-list>

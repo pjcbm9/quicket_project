@@ -1,0 +1,17 @@
+<animation-list
+    android:id="@+id/complete_anim"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/cc2" android:duration="50" />
+    <item android:drawable="@drawable/cc3" android:duration="50" />
+    <item android:drawable="@drawable/cc4" android:duration="50" />
+    <item android:drawable="@drawable/cc5" android:duration="50" />
+    <item android:drawable="@drawable/cc6" android:duration="50" />
+    <item android:drawable="@drawable/cc7" android:duration="50" />
+    <item android:drawable="@drawable/cc6" android:duration="50" />
+    <item android:drawable="@drawable/cc5" android:duration="50" />
+    <item android:drawable="@drawable/cc4" android:duration="50" />
+    <item android:drawable="@drawable/cc3" android:duration="50" />
+    <item android:drawable="@drawable/cc2" android:duration="50" />
+
+</animation-list>

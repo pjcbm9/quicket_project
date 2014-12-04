@@ -1,0 +1,15 @@
+<animation-list
+    android:id="@+id/active_ticket_anim"
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ticket_anim1" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim2" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim3" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim4" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim5" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim4" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim3" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim2" android:duration="50" />
+    <item android:drawable="@drawable/ticket_anim1" android:duration="50" />
+    <item android:drawable="@drawable/trendyticket" android:duration="50" />
+</animation-list>

@@ -1,0 +1,15 @@
+<animation-list
+    android:id="@+id/delete_button_anim"
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/button_anim1" android:duration="50" />
+    <item android:drawable="@drawable/button_anim2" android:duration="50" />
+    <item android:drawable="@drawable/button_anim3" android:duration="50" />
+    <item android:drawable="@drawable/button_anim4" android:duration="50" />
+    <item android:drawable="@drawable/button_anim5" android:duration="50" />
+    <item android:drawable="@drawable/button_anim4" android:duration="50" />
+    <item android:drawable="@drawable/button_anim3" android:duration="50" />
+    <item android:drawable="@drawable/button_anim2" android:duration="50" />
+    <item android:drawable="@drawable/button_anim1" android:duration="50" />
+    <item android:drawable="@drawable/delete_button" android:duration="50" />
+</animation-list>

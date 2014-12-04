@@ -1,0 +1,21 @@
+<animation-list
+    android:id="@+id/alert_background_anim"
+    android:oneshot="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/alert_background1" android:duration="50" />
+    <item android:drawable="@drawable/alert_background2" android:duration="50" />
+    <item android:drawable="@drawable/alert_background3" android:duration="50" />
+    <item android:drawable="@drawable/alert_background4" android:duration="50" />
+    <item android:drawable="@drawable/alert_background5" android:duration="50" />
+    <item android:drawable="@drawable/alert_background6" android:duration="50" />
+    <item android:drawable="@drawable/alert_background7" android:duration="50" />
+    <item android:drawable="@drawable/alert_background8" android:duration="50" />
+    <item android:drawable="@drawable/alert_background7" android:duration="50" />
+    <item android:drawable="@drawable/alert_background6" android:duration="50" />
+    <item android:drawable="@drawable/alert_background5" android:duration="50" />
+    <item android:drawable="@drawable/alert_background4" android:duration="50" />
+    <item android:drawable="@drawable/alert_background3" android:duration="50" />
+    <item android:drawable="@drawable/alert_background2" android:duration="50" />
+    <item android:drawable="@drawable/alert_background1" android:duration="50" />
+    <item android:drawable="@drawable/alert_background" android:duration="50" />
+</animation-list>

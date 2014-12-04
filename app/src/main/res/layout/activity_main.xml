@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:background="@drawable/background2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <pjcbm9.quicket.CustomViews.SpartanTextView
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:shadowColor="#fff9e7ff"
+                android:textColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:text="ACTIVE"
+                android:padding="10dp"
+                android:background="@drawable/trendyblue2"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/ActiveLabel" />.SpartanTextView
+            <pjcbm9.quicket.CustomViews.DigitTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:background="@drawable/databox1"
+                android:id="@+id/activecount" />.DigitTextView
+        </LinearLayout>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="0dp"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <pjcbm9.quicket.CustomViews.SpartanTextView
+                android:layout_width="fill_parent"
+                android:layout_height="53dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:shadowColor="#fff9e7ff"
+                android:textColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:text="OVERDUE"
+                android:padding="10dp"
+                android:background="@drawable/trendyred2"
+                android:id="@+id/OverdueLabel" />.SpartanTextView
+            <pjcbm9.quicket.CustomViews.DigitTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/databox1"
+                android:id="@+id/overduecount" />.DigitTextView
+        </LinearLayout>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="0dp"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <pjcbm9.quicket.CustomViews.SpartanTextView
+                android:layout_width="fill_parent"
+                android:text="COMPLETED"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:shadowColor="#fff9e7ff"
+                android:textColor="#ff000000"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="10"
+                android:layout_height="53dp"
+                android:padding="10dp"
+                android:background="@drawable/trendygreen4"
+                android:id="@+id/CompletedLabel" />.SpartanTextView
+            <pjcbm9.quicket.CustomViews.DigitTextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/databox1"
+                android:id="@+id/completedcount" />.DigitTextView
+        </LinearLayout>
+    </LinearLayout>
+    <pjcbm9.quicket.CustomViews.SpartanButton
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:shadowColor="#ffefffee"
+        android:textColor="#ff000000"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="30"
+        android:text="CREATE NEW TICKET"
+        android:id="@+id/NewTicketB"
+        android:paddingLeft="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trendy" />.SpartanButton
+    <View
+        android:layout_width="5dp"
+        android:layout_height="10dp"></View>
+    <pjcbm9.quicket.CustomViews.SpartanButton
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:text="TICKET DRAFTS"
+        android:layout_below="@+id/NewTicketB"
+        android:paddingLeft="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trendy1"
+        android:id="@+id/loadticketb" />.SpartanButton
+    <View
+        android:layout_width="5dp"
+        android:layout_height="10dp"></View>
+    <pjcbm9.quicket.CustomViews.SpartanButton
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:textSize="20sp"
+        android:text="ACTIVE TICKETS"
+        android:layout_below="@+id/NewTicketB"
+        android:paddingLeft="70dp"
+        android:id="@+id/activetickets"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trendy2" />.SpartanButton
+    <View
+        android:layout_width="5dp"
+        android:layout_height="10dp"></View>
+    <pjcbm9.quicket.CustomViews.SpartanButton
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="65dp"
+        android:textSize="20sp"
+        android:text="COMPLETED TICKETS"
+        android:layout_below="@+id/NewTicketB"
+        android:id="@+id/ViewCompletedB"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/trendy3" />.SpartanButton
+    <View
+        android:layout_width="5dp"
+        android:layout_height="10dp"></View>
+    <pjcbm9.quicket.CustomViews.SpartanButton
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="65dp"
+        android:textSize="20sp"
+        android:text="OVERDUE TICKETS"
+        android:layout_below="@+id/NewTicketB"
+        android:id="@+id/OverdueB"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/overduebutton" />.SpartanButton
+
+
+</LinearLayout>

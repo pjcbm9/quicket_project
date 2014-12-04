@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="350dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/plainbackground2">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:shadowColor="#ff000000"
+        android:textColor="#ffefffee"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="30"
+        android:text="ENTER DESCRIPTION BELOW"
+        android:id="@+id/AddDescriptionLabel"
+        android:background="@drawable/silverblue" />
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"></View>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:padding="15dp"
+        android:id="@+id/DescriptionText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/descriptionbox" />
+    <View
+        android:layout_width="10dp"
+        android:layout_height="10dp"></View>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUBMIT"
+            android:background="@drawable/silverbutton"
+            android:id="@+id/Submitb" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"></View>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLEAR"
+            android:background="@drawable/silverbutton"
+            android:id="@+id/clearb" />
+    </LinearLayout>
+</LinearLayout>

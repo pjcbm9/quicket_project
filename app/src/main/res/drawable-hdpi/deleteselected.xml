@@ -1,0 +1,26 @@
+<animation-list
+    android:id="@+id/deleteselected"
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/deletedialogue" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue1" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue2" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue3" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue4" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue5" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue6" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue7" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue8" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue9" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue10" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue9" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue8" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue7" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue6" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue5" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue4" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue3" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue2" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue1" android:duration="50" />
+    <item android:drawable="@drawable/deletedialogue" android:duration="50" />
+</animation-list>

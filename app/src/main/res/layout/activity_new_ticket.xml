@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:background="@drawable/plainbackground2">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="DATE"
+            android:background="@drawable/silverblue"
+            android:id="@+id/DateLabel" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="13sp"
+            android:id="@+id/datebox"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/silverdatebox" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="NAME"
+            android:background="@drawable/silverblue2"
+            android:id="@+id/NameLabel" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/NameText"
+            android:padding="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/boxsilver" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="USER"
+            android:background="@drawable/silverblue"
+            android:id="@+id/AssigneeLabel" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/AssigneeSpinner"
+            android:paddingLeft="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/dropdownsilver"
+            android:spinnerMode="dropdown"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="TYPE"
+            android:background="@drawable/silverblue"
+            android:id="@+id/TypeLabel" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/TypeSpinner"
+            android:paddingLeft="15dip"
+            android:layout_weight="1"
+            android:background="@drawable/dropdownsilver"
+            android:spinnerMode="dropdown"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="LOCATION"
+            android:background="@drawable/silverblue"
+            android:id="@+id/LocationLabel" />
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/LocationSpinner"
+            android:layout_weight="1"
+            android:paddingLeft="15dip"
+            android:background="@drawable/dropdownsilver"
+            android:spinnerMode="dropdown"
+            android:clickable="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="CUSTOMER"
+            android:background="@drawable/silverblue"
+            android:id="@+id/CustomerLabel" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="15dip"
+            android:id="@+id/CustomerText"
+            android:layout_weight="1"
+            android:background="@drawable/boxsilver" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="10dip"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:text="DESCRIPTION"
+            android:background="@drawable/silverblue"
+            android:id="@+id/DescriptionLabel" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/AddDescriptionB"
+            android:layout_weight="1"
+            android:text="Add Description"
+            android:background="@drawable/silverbutton2" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="SUBMIT"
+            android:background="@drawable/silverbutton"
+            android:id="@+id/SubmitB" />
+        <View
+            android:layout_width="10dp"
+            android:layout_height="0dp"></View>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="SAVE DRAFT"
+            android:background="@drawable/silverbutton"
+            android:id="@+id/SaveDraftB" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialoguebackground"
+    android:padding="10dip">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/DraftOpenButton"
+        android:background="@drawable/trendyopen" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/DraftDeleteButton"
+        android:background="@drawable/trendydelete" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/DraftCancelButton"
+        android:background="@drawable/trendycancel" />
+
+</LinearLayout>

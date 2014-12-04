@@ -1,0 +1,14 @@
+<animation-list
+    android:id="@+id/silver_anim"
+    android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/g1" android:duration="50" />
+    <item android:drawable="@drawable/g2" android:duration="50" />
+    <item android:drawable="@drawable/g3" android:duration="50" />
+    <item android:drawable="@drawable/g4" android:duration="50" />
+    <item android:drawable="@drawable/g5" android:duration="50" />
+    <item android:drawable="@drawable/g4" android:duration="50" />
+    <item android:drawable="@drawable/g3" android:duration="50" />
+    <item android:drawable="@drawable/g2" android:duration="50" />
+    <item android:drawable="@drawable/silverbutton" android:duration="50" />
+</animation-list>

@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/dialoguebackground"
+android:padding="10dip">
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/viewbutton"
+        android:background="@drawable/viewdialogue" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/editbutton"
+        android:background="@drawable/editdialogue" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/deletebutton"
+        android:background="@drawable/trendydelete" />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="5dp" />
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:id="@+id/completebutton"
+        android:background="@drawable/trendy3" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="2dip">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+
+        <pjcbm9.quicket.CheckBox
+            android:layout_width="50dp"
+            android:visibility="gone"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="5dp"
+            android:id="@+id/checkBox"
+            android:checked="true"
+            android:background="@drawable/databox1" />.CheckBox
+        <pjcbm9.quicket.CustomViews.TicketButton
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="#fff9e7ff"
+            android:textColor="#ff000000"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="40"
+            android:id="@+id/TicketButton"
+            android:textSize="12sp"
+            android:background="@drawable/left_active_ticket" />.TicketButton
+        <pjcbm9.quicket.CustomViews.TicketCountDown
+            android:layout_width="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#fff9e7ff"
+            android:textColor="#fffffbf5"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="40"
+            android:layout_height="fill_parent"
+            android:background="@drawable/active_ticket_right"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:id="@+id/ticketcountdown" />.TicketCountDown
+    </LinearLayout>
+
+
+</LinearLayout>
