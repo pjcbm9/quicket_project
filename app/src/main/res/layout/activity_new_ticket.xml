@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:padding="10dip"
-    android:background="@drawable/plainbackground2">
+    android:background="@drawable/background2">
 
     <LinearLayout
         android:orientation="horizontal"
@@ -25,17 +25,47 @@
             android:gravity="center"
             android:textSize="20sp"
             android:text="DATE"
-            android:background="@drawable/silverblue"
+            android:background="@drawable/new_ticket_label"
             android:id="@+id/DateLabel" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:id="@+id/datebox"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@drawable/silverdatebox" />
+            android:background="@drawable/new_ticket_date_box" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:shadowColor="#ff000000"
+            android:textColor="#ffefffee"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="30"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="CUSTOMER"
+            android:background="@drawable/new_ticket_label"
+            android:id="@+id/CustomerLabel" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="15dip"
+            android:id="@+id/CustomerText"
+            android:layout_weight="1"
+            android:background="@drawable/data_box" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -56,8 +86,9 @@
             android:gravity="center"
             android:textSize="20sp"
             android:text="NAME"
-            android:background="@drawable/silverblue2"
+            android:background="@drawable/new_ticket_label"
             android:id="@+id/NameLabel" />
+
 
         <EditText
             android:layout_width="fill_parent"
@@ -65,7 +96,7 @@
             android:id="@+id/NameText"
             android:padding="15dip"
             android:layout_weight="1"
-            android:background="@drawable/boxsilver" />
+            android:background="@drawable/data_box" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -86,7 +117,7 @@
             android:gravity="center"
             android:textSize="20sp"
             android:text="USER"
-            android:background="@drawable/silverblue"
+            android:background="@drawable/new_ticket_label"
             android:id="@+id/AssigneeLabel" />
 
         <Spinner
@@ -95,7 +126,7 @@
             android:id="@+id/AssigneeSpinner"
             android:paddingLeft="15dip"
             android:layout_weight="1"
-            android:background="@drawable/dropdownsilver"
+            android:background="@drawable/new_ticket_spinner"
             android:spinnerMode="dropdown"
             android:clickable="true" />
     </LinearLayout>
@@ -118,7 +149,7 @@
             android:gravity="center"
             android:textSize="20sp"
             android:text="TYPE"
-            android:background="@drawable/silverblue"
+            android:background="@drawable/new_ticket_label"
             android:id="@+id/TypeLabel" />
 
         <Spinner
@@ -127,7 +158,7 @@
             android:id="@+id/TypeSpinner"
             android:paddingLeft="15dip"
             android:layout_weight="1"
-            android:background="@drawable/dropdownsilver"
+            android:background="@drawable/new_ticket_spinner"
             android:spinnerMode="dropdown"
             android:clickable="true" />
     </LinearLayout>
@@ -150,7 +181,7 @@
             android:gravity="center"
             android:textSize="18sp"
             android:text="LOCATION"
-            android:background="@drawable/silverblue"
+            android:background="@drawable/new_ticket_label"
             android:id="@+id/LocationLabel" />
 
         <Spinner
@@ -159,10 +190,12 @@
             android:id="@+id/LocationSpinner"
             android:layout_weight="1"
             android:paddingLeft="15dip"
-            android:background="@drawable/dropdownsilver"
+            android:background="@drawable/new_ticket_spinner"
             android:spinnerMode="dropdown"
             android:clickable="true" />
     </LinearLayout>
+
+
     <LinearLayout
         android:orientation="horizontal"
         android:paddingBottom="10dip"
@@ -170,60 +203,20 @@
         android:layout_weight="1"
         android:layout_height="0dp">
 
-        <TextView
+        <Button
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_weight="2"
-            android:shadowColor="#ff000000"
-            android:textColor="#ffefffee"
-            android:shadowDx="0.0"
-            android:shadowDy="0.0"
-            android:shadowRadius="30"
-            android:gravity="center"
-            android:textSize="18sp"
-            android:text="CUSTOMER"
-            android:background="@drawable/silverblue"
-            android:id="@+id/CustomerLabel" />
-
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="15dip"
-            android:id="@+id/CustomerText"
+            android:id="@+id/EditCountdownB"
             android:layout_weight="1"
-            android:background="@drawable/boxsilver" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:paddingBottom="10dip"
-        android:layout_width="fill_parent"
-        android:layout_weight="1"
-        android:layout_height="0dp">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:padding="10dip"
-            android:layout_weight="2"
-            android:shadowColor="#ff000000"
-            android:textColor="#ffefffee"
-            android:shadowDx="0.0"
-            android:shadowDy="0.0"
-            android:shadowRadius="30"
-            android:gravity="center"
-            android:textSize="13sp"
-            android:text="DESCRIPTION"
-            android:background="@drawable/silverblue"
-            android:id="@+id/DescriptionLabel" />
-
+            android:text="Edit Countdown"
+            android:background="@drawable/generic_button" />
         <Button
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/AddDescriptionB"
             android:layout_weight="1"
             android:text="Add Description"
-            android:background="@drawable/silverbutton2" />
+            android:background="@drawable/generic_button" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
