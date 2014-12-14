@@ -16,7 +16,7 @@
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content">
-            <pjcbm9.quicket.CustomViews.SpartanTextView
+            <pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.CounterLabel
                 android:layout_width="wrap_content"
                 android:layout_height="53dp"
                 android:gravity="center"
@@ -30,14 +30,14 @@
                 android:padding="10dp"
                 android:background="@drawable/trendyblue2"
                 android:layout_gravity="center_horizontal"
-                android:id="@+id/ActiveLabel" />.SpartanTextView
+                android:id="@+id/ActiveLabel" />.CounterLabel
             <pjcbm9.quicket.CustomViews.DigitTextView
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="35dp"
                 android:gravity="center"
                 android:textSize="20sp"
                 android:padding="10dp"
-                android:background="@drawable/databox1"
+                android:background="@drawable/counterlabel"
                 android:id="@+id/activecount" />.DigitTextView
         </LinearLayout>
         <View
@@ -48,7 +48,7 @@
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content">
-            <pjcbm9.quicket.CustomViews.SpartanTextView
+            <pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.CounterLabel
                 android:layout_width="fill_parent"
                 android:layout_height="53dp"
                 android:gravity="center"
@@ -61,14 +61,14 @@
                 android:text="OVERDUE"
                 android:padding="10dp"
                 android:background="@drawable/trendyred2"
-                android:id="@+id/OverdueLabel" />.SpartanTextView
+                android:id="@+id/OverdueLabel" />.CounterLabel
             <pjcbm9.quicket.CustomViews.DigitTextView
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:padding="10dp"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:background="@drawable/databox1"
+                android:background="@drawable/counterlabel"
                 android:id="@+id/overduecount" />.DigitTextView
         </LinearLayout>
         <View
@@ -79,7 +79,7 @@
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content">
-            <pjcbm9.quicket.CustomViews.SpartanTextView
+            <pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.CounterLabel
                 android:layout_width="fill_parent"
                 android:text="COMPLETED"
                 android:gravity="center"
@@ -92,14 +92,14 @@
                 android:layout_height="53dp"
                 android:padding="10dp"
                 android:background="@drawable/trendygreen4"
-                android:id="@+id/CompletedLabel" />.SpartanTextView
+                android:id="@+id/CompletedLabel" />.CounterLabel
             <pjcbm9.quicket.CustomViews.DigitTextView
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_height="35dp"
                 android:padding="10dp"
                 android:textSize="20sp"
                 android:gravity="center"
-                android:background="@drawable/databox1"
+                android:background="@drawable/counterlabel"
                 android:id="@+id/completedcount" />.DigitTextView
         </LinearLayout>
     </LinearLayout>

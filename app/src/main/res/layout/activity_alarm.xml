@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="pjcbm9.quicket.ticketView"
+    tools:context="pjcbm9.quicket.Ticket_View_Package.ticketView"
     android:id="@+id/alert_background"
     android:background="@drawable/alert_background">
     <pjcbm9.quicket.CustomViews.SpartanTextView

@@ -10,7 +10,7 @@
         android:layout_height="fill_parent"
         android:layout_width="fill_parent">
 
-        <pjcbm9.quicket.CheckBox
+        <pjcbm9.quicket.Ticket_List_Package.CheckBox
             android:layout_width="50dp"
             android:visibility="gone"
             android:layout_height="fill_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/checkBox"
             android:checked="true"
             android:background="@drawable/databox1" />.CheckBox
-        <pjcbm9.quicket.CustomViews.TicketButton
+        <pjcbm9.quicket.Ticket_List_Package.TicketButton
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
@@ -31,7 +31,7 @@
             android:id="@+id/TicketButton"
             android:textSize="12sp"
             android:background="@drawable/left_active_ticket" />.TicketButton
-        <pjcbm9.quicket.CustomViews.TicketCountDown
+        <pjcbm9.quicket.Ticket_List_Package.TicketCountDown
             android:layout_width="fill_parent"
             android:layout_weight="2"
             android:shadowColor="#fff9e7ff"

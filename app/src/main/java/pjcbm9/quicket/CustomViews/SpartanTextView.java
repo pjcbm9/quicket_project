@@ -30,4 +30,5 @@ public class SpartanTextView extends TextView {
             setTypeface(tf);
         }
     }
+
 }

@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="pjcbm9.quicket.AlarmActivity" >
+    tools:context="pjcbm9.quicket.Alarm_Package.AlarmActivity" >
     <item android:id="@+id/home_icon2"
         android:title="home"
         android:icon="@drawable/home_icon"

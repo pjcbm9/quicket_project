@@ -5,13 +5,13 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:id="@+id/TicketBackground"
-    tools:context="pjcbm9.quicket.ticketView"
+    tools:context="pjcbm9.quicket.Ticket_View_Package.ticketView"
     android:background="@drawable/plainbackground2">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="NAME"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -26,8 +26,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketNameLabel" />
-        <TextView
+            android:id="@+id/TicketNameLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -36,13 +36,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketnametv" />
+            android:id="@+id/ticketnametv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="STATUS"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -57,8 +57,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketStatusLabel" />
-        <TextView
+            android:id="@+id/TicketStatusLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -67,13 +67,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketstatustv" />
+            android:id="@+id/ticketstatustv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="COUNTDOWN"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -88,9 +88,9 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketTimerLabel" />
-        <TextView
-            android:text="@string/hello_world"
+            android:id="@+id/TicketTimerLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.DigitTextView
+            android:text="NOT APPLICABLE"
             android:padding="10dp"
             android:gravity="center_vertical"
             android:layout_weight="3"
@@ -98,7 +98,7 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/tickettimertv" />
+            android:id="@+id/tickettimertv" />.DigitTextView
     </LinearLayout>
 
 
@@ -106,7 +106,7 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="DATE"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -121,8 +121,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketDateLabel" />
-        <TextView
+            android:id="@+id/TicketDateLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -132,13 +132,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketdatetv" />
+            android:id="@+id/ticketdatetv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="ASSIGNEE"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -153,8 +153,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketAssigneeLabel" />
-        <TextView
+            android:id="@+id/TicketAssigneeLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -163,13 +163,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketassigneetv" />
+            android:id="@+id/ticketassigneetv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="TYPE"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -184,8 +184,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketTypeLabel" />
-        <TextView
+            android:id="@+id/TicketTypeLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -194,13 +194,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/tickettypetv" />
+            android:id="@+id/tickettypetv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="LOCATION"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -215,8 +215,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketLocationLabel" />
-        <TextView
+            android:id="@+id/TicketLocationLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -225,13 +225,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketlocationtv" />
+            android:id="@+id/ticketlocationtv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="40dp">
-        <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="CUSTOMER"
             android:shadowColor="#ff000000"
             android:textColor="#ffefffee"
@@ -246,8 +246,8 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/active_label"
-            android:id="@+id/TicketCustomerLabel" />
-        <TextView
+            android:id="@+id/TicketCustomerLabel" />.SpartanTextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
             android:text="@string/hello_world"
             android:gravity="center_vertical"
             android:padding="10dp"
@@ -256,13 +256,13 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center"
             android:background="@drawable/text_box"
-            android:id="@+id/ticketcustomertv" />
+            android:id="@+id/ticketcustomertv" />.SpartanTextView
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-    <TextView
+        <pjcbm9.quicket.CustomViews.SpartanTextView
         android:text="DESCRIPTION"
         android:layout_width="fill_parent"
         android:shadowColor="#ff000000"
@@ -277,9 +277,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/long_active_label"
-        android:id="@+id/TicketDescriptionLabel" />
+        android:id="@+id/TicketDescriptionLabel" />.SpartanTextView
     </LinearLayout>
-    <TextView
+    <pjcbm9.quicket.CustomViews.SpartanTextView
         android:text="Ticket Customer"
         android:padding="10dp"
         android:layout_width="fill_parent"
@@ -288,7 +288,7 @@
         android:layout_height="75dp"
         android:layout_gravity="center"
         android:background="@drawable/big_text_box"
-        android:id="@+id/ticketdescriptiontv" />
+        android:id="@+id/ticketdescriptiontv" />.SpartanTextView
     <View
         android:layout_width="5dp"
         android:layout_height="10dp"></View>
@@ -296,7 +296,7 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
-        <Button
+        <pjcbm9.quicket.CustomViews.SpartanButton
             android:text="DELETE"
             android:padding="10dp"
             android:layout_width="wrap_content"
@@ -306,11 +306,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/delete_button"
-            android:id="@+id/deleteb" />
+            android:id="@+id/deleteb" />.SpartanButton
         <View
             android:layout_width="5dp"
             android:layout_height="0dp"></View>
-        <Button
+        <pjcbm9.quicket.CustomViews.SpartanButton
             android:text="EDIT"
             android:padding="10dp"
             android:layout_width="wrap_content"
@@ -320,11 +320,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/edit_button"
-            android:id="@+id/editb" />
+            android:id="@+id/editb" />.SpartanButton
         <View
             android:layout_width="5dp"
             android:layout_height="0dp"></View>
-        <Button
+        <pjcbm9.quicket.CustomViews.SpartanButton
             android:text="COMPLETE"
             android:padding="10dp"
             android:layout_width="wrap_content"
@@ -334,6 +334,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@drawable/complete_button"
-            android:id="@+id/completeb" />
+            android:id="@+id/completeb" />.SpartanButton
     </LinearLayout>
 </LinearLayout>

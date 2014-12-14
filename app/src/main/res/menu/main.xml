@@ -11,9 +11,5 @@
         android:icon="@drawable/about_icon"
         android:title="maintenance"
         android:showAsAction="always" />
-    <item
-        android:id="@+id/question"
-        android:icon="@drawable/question_icon"
-        android:title="maintenance"
-        android:showAsAction="always" />
+
 </menu>

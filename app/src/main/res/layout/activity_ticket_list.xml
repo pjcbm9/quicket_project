@@ -194,7 +194,7 @@
         android:layout_width="fill_parent"
         android:padding="2dp"
         android:background="#ff000000">
-        <pjcbm9.quicket.VerticalTextButton
+        <pjcbm9.quicket.Ticket_List_Package.VerticalTextButton
             android:layout_weight="1"
             android:id="@+id/ActiveB"
             android:gravity="center"
@@ -204,7 +204,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:background="@drawable/vertical_button" />
-        <pjcbm9.quicket.VerticalTextButton
+        <pjcbm9.quicket.Ticket_List_Package.VerticalTextButton
             android:layout_weight="1"
             android:id="@+id/OverdueB"
             android:gravity="center"
@@ -214,7 +214,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:background="@drawable/vertical_button" />
-        <pjcbm9.quicket.VerticalTextButton
+        <pjcbm9.quicket.Ticket_List_Package.VerticalTextButton
             android:layout_weight="1"
             android:id="@+id/CompletedB"
             android:gravity="center"
@@ -224,7 +224,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:background="@drawable/vertical_button" />
-        <pjcbm9.quicket.VerticalTextButton
+        <pjcbm9.quicket.Ticket_List_Package.VerticalTextButton
             android:layout_weight="1"
             android:id="@+id/DraftB"
             android:gravity="center"
