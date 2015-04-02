@@ -1,10 +1,12 @@
 package pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -16,11 +18,13 @@ import pjcbm9.quicket.New_Ticket_Package.NewTicket;
 import pjcbm9.quicket.Quicket_Package.Controller;
 import pjcbm9.quicket.Quicket_Package.Ticket;
 import pjcbm9.quicket.R;
+import pjcbm9.quicket.SendMailActivity;
 import pjcbm9.quicket.Ticket_List_Package.Ticket_List;
 
 import static pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.TicketCounter.ButtonEnabler;
 import static pjcbm9.quicket.Quicket_Package.Static_Helpers.DelayIntent;
 import static pjcbm9.quicket.Quicket_Package.Static_Helpers.setUpAnimation;
+import static pjcbm9.quicket.Quicket_Package.Static_Helpers.startIntent;
 import static pjcbm9.quicket.Quicket_Package.Static_Helpers.updateActionBar;
 
 
@@ -30,6 +34,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private CounterLabel ActiveLabel,OverdueLabel,CompletedLabel;
     private ArrayList<TicketCounter> ticketCounters;
     private Controller controller;
+    private Button sendemail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +71,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ActiveLabel = (CounterLabel)findViewById(R.id.ActiveLabel);
         OverdueLabel = (CounterLabel)findViewById(R.id.OverdueLabel);
         CompletedLabel = (CounterLabel)findViewById(R.id.CompletedLabel);
+        sendemail = (Button)findViewById(R.id.sendemail);
     }
     private void addListeners(){
         CreateNewTicket.setOnClickListener(this);
@@ -113,6 +119,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
 
         switch(view.getId()){
+            case(R.id.sendemail):
+                startIntent(this, SendMailActivity.class);
+                break;
             case(R.id.NewTicketB):
                 SetUpAnimation("test", view);
                 delayIntent(500,NewTicket.class);
