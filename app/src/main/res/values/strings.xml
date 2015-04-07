@@ -11,7 +11,13 @@
     <string name="title_activity_my">MyActivity</string>
     <string name="title_activity_ticket_view">ticketView</string>
     <string name="title_activity_maintenance">Maintenance</string>
-
+    <string name="tv_usr_name">User name</string>
+    <string name="tv_usr_pass">Pass</string>
+    <string name="tv_to_addresses">To: (use \';\' to separate addresses)</string>
+    <string name="tv_text_content">Content</string>
+    <string name="btn_send">Send</string>
+    <string name="tv_subject">Subject</string>
+    <string name="tv_sending_mail">Sending mail…</string>
     <string-array name="maintenance_spinner">
         <item>USERS</item>
         <item>TYPES</item>

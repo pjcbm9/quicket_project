@@ -34,7 +34,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private CounterLabel ActiveLabel,OverdueLabel,CompletedLabel;
     private ArrayList<TicketCounter> ticketCounters;
     private Controller controller;
-    private Button sendemail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -71,7 +70,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         ActiveLabel = (CounterLabel)findViewById(R.id.ActiveLabel);
         OverdueLabel = (CounterLabel)findViewById(R.id.OverdueLabel);
         CompletedLabel = (CounterLabel)findViewById(R.id.CompletedLabel);
-        sendemail = (Button)findViewById(R.id.sendemail);
     }
     private void addListeners(){
         CreateNewTicket.setOnClickListener(this);
@@ -119,9 +117,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View view) {
 
         switch(view.getId()){
-            case(R.id.sendemail):
-                startIntent(this, SendMailActivity.class);
-                break;
             case(R.id.NewTicketB):
                 SetUpAnimation("test", view);
                 delayIntent(500,NewTicket.class);

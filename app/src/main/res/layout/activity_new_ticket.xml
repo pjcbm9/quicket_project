@@ -283,9 +283,4 @@
             android:background="@drawable/edit_button"
             android:id="@+id/SaveDraftB" />.SpartanButton
     </LinearLayout>
-    <Button
-        android:id="@+id/send"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email Ticket" />
 </LinearLayout>

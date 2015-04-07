@@ -16,11 +16,11 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import pjcbm9.quicket.CustomViews.SpartanButton;
-import pjcbm9.quicket.GMailSender;
 import pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.MainActivity;
 import pjcbm9.quicket.R;
 import pjcbm9.quicket.Quicket_Package.Ticket;
 import pjcbm9.quicket.Quicket_Package.Controller;
+import pjcbm9.quicket.SendMailActivity;
 import pjcbm9.quicket.Ticket_View_Package.ticketView;
 
 import static pjcbm9.quicket.Alarm_Package.AlarmManagerHelper.setAlarm;
@@ -46,7 +46,6 @@ public class NewTicket extends Activity implements TextWatcher,
     private Boolean isNewTicket;
     private Ticket ticket;
     public static final Boolean loadDefaults = false;
-    private Button send;
     ////////////////////////////////////////////////////////////////////////////////////////////////
     // New Ticket Activity
     //   This Activity Creates New and Draft Tickets
@@ -139,11 +138,9 @@ public class NewTicket extends Activity implements TextWatcher,
         TypeSpinner.setOnTouchListener(this);
         LocationSpinner.setOnTouchListener(this);
         AssigneeSpinner.setOnTouchListener(this);
-        send.setOnClickListener(this);
     }
 
     public void initializeVariables() {
-        send = (Button) this.findViewById(R.id.send);
         TypeSpinner = (TicketSpinner) findViewById(R.id.TypeSpinner);
         LocationSpinner = (TicketSpinner) findViewById(R.id.LocationSpinner);
         AssigneeSpinner = (TicketSpinner) findViewById(R.id.AssigneeSpinner);
@@ -216,7 +213,7 @@ public class NewTicket extends Activity implements TextWatcher,
             case (R.id.SubmitB):
                 submitNewTicket();
                 SetUpAnimation("silver_anim", view);
-                delayIntent(500, ticketView.class, ticket);
+                delayIntent(500, SendMailActivity.class, ticket);
                 break;
             case (R.id.AddDescriptionB):
                 SetUpAnimation("description_anim", view);
@@ -232,21 +229,6 @@ public class NewTicket extends Activity implements TextWatcher,
                 submitDraftTicket();
                 SetUpAnimation("silver_anim", view);
                 finish();
-                break;
-            case (R.id.send):
-                try {
-                    GMailSender sender = new GMailSender("mrjasoncrow@gmail.com", "Trusty01");
-                    sender.sendMail("This is Subject",
-                            "This is Body",
-                            "mrjasoncrow@gmail.com",
-                            "pjcbm9@mail.umck.edu");
-                    Toast toast = Toast.makeText(this, "go", Toast.LENGTH_SHORT);
-                    toast.show();
-                } catch (Exception e) {
-                    Log.e("SendMail", e.getMessage(), e);
-                    Toast toast = Toast.makeText(this, "no go", Toast.LENGTH_SHORT);
-                    toast.show();
-                }
                 break;
         }
     }
