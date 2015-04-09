@@ -19,6 +19,7 @@ import pjcbm9.quicket.New_Ticket_Package.NewTicket;
 import pjcbm9.quicket.Quicket_Package.Controller;
 import pjcbm9.quicket.Quicket_Package.Ticket;
 import pjcbm9.quicket.R;
+import pjcbm9.quicket.Ticket_View_Package.SendMailTask;
 
 import static pjcbm9.quicket.Quicket_Package.Static_Helpers.DelayFinish;
 import static pjcbm9.quicket.Quicket_Package.Static_Helpers.DelayIntent;
@@ -46,6 +47,7 @@ public class AlarmActivity extends Activity implements View.OnClickListener{
         addListeners();
         updateActionBar(this, "QUICKET ALERT");
         setUpAnimation("alert_backbround_anim", this, alert_background);
+        new SendMailTask(this,ticket,SendMailTask.type.OVERDUE).execute((Void[]) null);
     }
     @Override
     protected void onDestroy() {

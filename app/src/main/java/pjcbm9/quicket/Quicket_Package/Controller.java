@@ -5,6 +5,7 @@ import android.content.Context;
 import java.util.ArrayList;
 
 import pjcbm9.quicket.Maintenance_Package.MItem;
+import pjcbm9.quicket.Ticket_View_Package.SendMailTask;
 
 import static pjcbm9.quicket.Alarm_Package.AlarmManagerHelper.cancelAlarm;
 
@@ -27,6 +28,8 @@ public class Controller  {
     }
     public void requestTicketDeletion(long ticketID){
         cancelAlarm(context,ticketID);
+        Ticket ticket = DB.getTicket(ticketID);
+        new SendMailTask(context,ticket,SendMailTask.type.DELETE).execute((Void[]) null);
         DB.deleteTicket(ticketID);
     }
     public ArrayList<Ticket> requestTicketsByKeyword(String keyword){
@@ -39,6 +42,8 @@ public class Controller  {
         DB.updateTickets();
     }
     public void requestTicketCompletion(long ticketID){
+        Ticket ticket = DB.getTicket(ticketID);
+        new SendMailTask(context,ticket,SendMailTask.type.COMPLETE).execute((Void[]) null);
         DB.updateTicketStatus(ticketID, Ticket.Status.COMPLETED.toString());
     }
     public void requestInsertMaintenanceArray(ArrayList<MItem> mArray) {

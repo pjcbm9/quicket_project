@@ -1,7 +1,9 @@
 package pjcbm9.quicket.New_Ticket_Package;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
@@ -15,12 +17,21 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.Toast;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.StringTokenizer;
+import java.util.regex.Pattern;
+
 import pjcbm9.quicket.CustomViews.SpartanButton;
 import pjcbm9.quicket.MAIN_ACTIVITY_PACKAGE.MainActivity;
+import pjcbm9.quicket.MailSender;
 import pjcbm9.quicket.R;
 import pjcbm9.quicket.Quicket_Package.Ticket;
 import pjcbm9.quicket.Quicket_Package.Controller;
 import pjcbm9.quicket.SendMailActivity;
+import pjcbm9.quicket.Ticket_View_Package.SendMailTask;
 import pjcbm9.quicket.Ticket_View_Package.ticketView;
 
 import static pjcbm9.quicket.Alarm_Package.AlarmManagerHelper.setAlarm;
@@ -212,8 +223,9 @@ public class NewTicket extends Activity implements TextWatcher,
         switch (view.getId()) {
             case (R.id.SubmitB):
                 submitNewTicket();
+                new SendMailTask(this,ticket).execute((Void[]) null);
                 SetUpAnimation("silver_anim", view);
-                delayIntent(500, SendMailActivity.class, ticket);
+                delayIntent(500, ticketView.class, ticket);
                 break;
             case (R.id.AddDescriptionB):
                 SetUpAnimation("description_anim", view);
@@ -276,4 +288,5 @@ public class NewTicket extends Activity implements TextWatcher,
         criticalFieldsHandler.handleFieldsState();
         return false;
     }
+
 }
