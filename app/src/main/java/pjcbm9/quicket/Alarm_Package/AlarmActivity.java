@@ -47,7 +47,7 @@ public class AlarmActivity extends Activity implements View.OnClickListener{
         addListeners();
         updateActionBar(this, "QUICKET ALERT");
         setUpAnimation("alert_backbround_anim", this, alert_background);
-        new SendMailTask(this,ticket,SendMailTask.type.OVERDUE).execute((Void[]) null);
+        new SendMailTask(ticket,SendMailTask.type.OVERDUE).execute((Void[]) null);
     }
     @Override
     protected void onDestroy() {

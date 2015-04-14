@@ -29,7 +29,7 @@ public class Controller  {
     public void requestTicketDeletion(long ticketID){
         cancelAlarm(context,ticketID);
         Ticket ticket = DB.getTicket(ticketID);
-        new SendMailTask(context,ticket,SendMailTask.type.DELETE).execute((Void[]) null);
+        new SendMailTask(ticket,SendMailTask.type.DELETE).execute((Void[]) null);
         DB.deleteTicket(ticketID);
     }
     public ArrayList<Ticket> requestTicketsByKeyword(String keyword){
@@ -43,7 +43,7 @@ public class Controller  {
     }
     public void requestTicketCompletion(long ticketID){
         Ticket ticket = DB.getTicket(ticketID);
-        new SendMailTask(context,ticket,SendMailTask.type.COMPLETE).execute((Void[]) null);
+        new SendMailTask(ticket,SendMailTask.type.COMPLETE).execute((Void[]) null);
         DB.updateTicketStatus(ticketID, Ticket.Status.COMPLETED.toString());
     }
     public void requestInsertMaintenanceArray(ArrayList<MItem> mArray) {

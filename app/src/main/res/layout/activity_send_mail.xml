@@ -80,7 +80,6 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="sendMail"
                 android:text="@string/btn_send" />
         </LinearLayout>
     </ScrollView>

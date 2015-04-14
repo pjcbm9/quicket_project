@@ -57,6 +57,7 @@ public class NewTicket extends Activity implements TextWatcher,
     private Boolean isNewTicket;
     private Ticket ticket;
     public static final Boolean loadDefaults = false;
+    public Context context;
     ////////////////////////////////////////////////////////////////////////////////////////////////
     // New Ticket Activity
     //   This Activity Creates New and Draft Tickets
@@ -73,6 +74,7 @@ public class NewTicket extends Activity implements TextWatcher,
         initializeHandlers();
         initialSetup();
         addListeners();
+        context = this.getApplicationContext();
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -223,7 +225,7 @@ public class NewTicket extends Activity implements TextWatcher,
         switch (view.getId()) {
             case (R.id.SubmitB):
                 submitNewTicket();
-                new SendMailTask(this,ticket).execute((Void[]) null);
+                new SendMailTask(ticket).execute((Void[]) null);
                 SetUpAnimation("silver_anim", view);
                 delayIntent(500, ticketView.class, ticket);
                 break;

@@ -23,15 +23,15 @@ public class SendMailTask extends AsyncTask<Void, Void, Void> {
     String subject;
     String texts;
     Ticket ticket;
-    String toAddrss = "mrjasoncrow@gmail.com";
+    String toAddrss = "pjcbm9@mail.umkc.edu";
     public enum type{
         DELETE,
         COMPLETE,
         OVERDUE
     }
-    public SendMailTask(Context context, Ticket ticket){
+    public SendMailTask( Ticket ticket){
         this.ticket = ticket;
-        this.context = context;
+        //this.context = context;
         this.subject = "New Quicket Ticket";
         SimpleDateFormat dt = new SimpleDateFormat("LLLL dd, yyyy hh:mm a");
         Date TicketDate = ticket.getTicketDate();
@@ -46,9 +46,9 @@ public class SendMailTask extends AsyncTask<Void, Void, Void> {
                 "Ticket Location: " + ticket.getIncidentLocation() + "\n\n";
 
     }
-    public SendMailTask(Context context, Ticket ticket, type t){
+    public SendMailTask(Ticket ticket, type t){
         this.ticket = ticket;
-        this.context = context;
+        //this.context = context;
         SimpleDateFormat dt = new SimpleDateFormat("LLLL dd, yyyy hh:mm a");
         Date TicketDate = ticket.getTicketDate();
         if(t.equals(type.DELETE)){
@@ -100,7 +100,7 @@ public class SendMailTask extends AsyncTask<Void, Void, Void> {
         return mailList.toArray(new String[0]);
     }
     private void sendMail() throws Exception {
-        Toast.makeText(context, "here", Toast.LENGTH_LONG).show();
+        //Toast.makeText(context, "here", Toast.LENGTH_LONG).show();
         String[] tos = extractEmails(toAddrss);
         // 1 - Create one instance
         MailSender m = new MailSender();
@@ -119,7 +119,7 @@ public class SendMailTask extends AsyncTask<Void, Void, Void> {
                 || (subject.length() < 1)
                 || (texts.length() < 1)
                 || (toAddrss.length() < 1)) {
-            Toast.makeText(context, "ERROR: Fill all the fields", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "ERROR: Fill all the fields", Toast.LENGTH_LONG).show();
         } else {
             super.onPreExecute();
             readyToSend = true;
@@ -140,10 +140,10 @@ public class SendMailTask extends AsyncTask<Void, Void, Void> {
     protected void onPostExecute(Void result) {
         super.onPostExecute(result);
         if (error == null) {
-            Toast.makeText(context, "Message sent!", Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "Message sent!", Toast.LENGTH_LONG).show();
 
         } else {
-            Toast.makeText(context, "ERROR sending: " + error.getMessage(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(context, "ERROR sending: " + error.getMessage(), Toast.LENGTH_LONG).show();
         }
         readyToSend = false;
     }
